@@ -14,8 +14,8 @@
     android:text="details"
     android:textSize="10sp"
     android:textstyle="bold"/>
-  <Textview
-      android:id="@+id/tvEnter your name"
+  <TextView
+      android:id="@+id/tv_Enter_your_name"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginLeft="20dp"
@@ -28,7 +28,7 @@
       android:paddingBottom="20dp"   />
 
    <EditText
-       android:id="@+id/Enter your email"
+       android:id="@+id/etEmail"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_marginLeft="20dp"
@@ -41,20 +41,20 @@
        android:paddingBottom="20dp"   />
 
     <EditText
-        android:id="@+id/Enter your phone number"
+        android:id="@+id/et_phone_number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="41dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
         android:drawablePadding="10dp"
         android:hint="Enter your phone number"
-        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
-        android:textStyle="bold"
-        android:paddingBottom="20dp"   />
+        android:paddingBottom="20dp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/Enter password"
+        android:id="@+id/et_Enter_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -67,7 +67,7 @@
         android:paddingBottom="20dp"   />
 
       <EditText
-          android:id="@+id/How you want to be address?"
+          android:id="@+id/et_Howyouwanttobeaddress"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginLeft="20dp"
@@ -79,11 +79,13 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
     <RadioButton
         android:id="@+id/radio_He"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="81dp"
         android:checked="true"
         android:onClick="checkButton"
         android:text="He" />
@@ -102,8 +104,7 @@
         android:onClick="checkButton"
         android:text="others" />
 
-    RadioButton/>
-
+    </RadioGroup>
     <TextView
        android:id="@+id/text_view_selected"
         android:layout_width="wrap_content"
@@ -116,7 +117,7 @@
      android:id="@+id/tvEnterPassword"
      android:layout_width="30dp"
      android:layout_height="30dp"
-     android:layout_below="@+id/Enterpassword"
+     android:layout_below="@+id/et_Enter_password"
      android:layout_marginHorizontal="20dp"
      android:layout_marginLeft="20dp"
      android:layout_marginTop="10dp"
@@ -125,10 +126,10 @@
      android:textSize="33sp" />
 
     <Button
-        android:id="@+id/button_SIGNUP"
-        android
+        android:id="@+id/et_button_SIGNUP"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/rd_others"
         android:text="SIGNUP" />.
 
 
